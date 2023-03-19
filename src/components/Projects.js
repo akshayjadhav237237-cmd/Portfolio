@@ -15,8 +15,8 @@ const Projects = () => {
                     </div>
                     <p>A responsive web application that you can use to take notes on the go.</p>
                     <div className='project-links'>
-                        <a href='https://notes-keeper517.netlify.app/' target='_blank'>Website</a>
-                        <a href='https://github.com/adityajadhav02/keeper-app' target='_blank'>Github</a>
+                        <a href='https://notes-keeper517.netlify.app/' target='_blank' rel="noreferrer">Website</a>
+                        <a href='https://github.com/adityajadhav02/keeper-app' target='_blank' rel="noreferrer">Github</a>
                     </div>
                 </div>
                 <div className='project-card'>
@@ -28,8 +28,8 @@ const Projects = () => {
                     </div>
                     <p>A web app that provides you the lateset trends and news from the crypto world.</p>
                     <div className='project-links'>
-                        <a href='https://cryptoverse22.netlify.app/' target='_blank'>Website</a>
-                        <a href='https://github.com/adityajadhav02/cryptoverse' target='_blank'>Github</a>
+                        <a href='https://cryptoverse22.netlify.app/' target='_blank' rel="noreferrer">Website</a>
+                        <a href='https://github.com/adityajadhav02/cryptoverse' target='_blank' rel="noreferrer">Github</a>
                     </div>
                 </div>
                 
@@ -43,8 +43,8 @@ const Projects = () => {
                     </div>
                     <p>A todo-list that helps you track your tasks and save them on the database.</p>
                     <div className='project-links'>
-                        <a href='https://todo-list-517.herokuapp.com/' target='_blank'>Website</a>
-                        <a href='https://github.com/adityajadhav02/todolist-node-ejs' target='_blank'>Github</a>
+                        <a href='https://todo-list-517.herokuapp.com/' target='_blank' rel="noreferrer">Website</a>
+                        <a href='https://github.com/adityajadhav02/todolist-node-ejs' target='_blank' rel="noreferrer">Github</a>
                     </div>
                 </div>
                 <div className='project-card'>
@@ -57,8 +57,8 @@ const Projects = () => {
                     </div>
                     <p>A simple website that fetches and displays movies. You can also search for movies. </p>
                     <div className='project-links'>
-                        <a href='https://moviedisplay.netlify.app/' target='_blank'>Website</a>
-                        <a href='https://github.com/adityajadhav02/movie-app' target='_blank'>Github</a>
+                        <a href='https://moviedisplay.netlify.app/' target='_blank' rel="noreferrer">Website</a>
+                        <a href='https://github.com/adityajadhav02/movie-app' target='_blank' rel="noreferrer">Github</a>
                     </div>
                 </div>
             </div>
