@@ -1,0 +1,91 @@
+.skills-container{
+    width: 100%;
+    padding: 2rem;
+}
+
+.skill h2{
+    /* color: var(--text-light-gray); */
+    color: #b1d5f9;
+}
+
+.skills-head{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.skill-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 1rem;
+    margin: 2rem;
+
+}
+.skill-card{
+    /* make the background glassy */
+    /* background-color: #1f2835; */
+    background-color: #161d28;
+    padding: 1rem;
+    border-radius: 10px;
+    /* border: 0.2px solid #2f3435; */
+    color: var(--text-light-gray);
+
+    /* make all cards of same size */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skill-card img{
+    height: 70px; 
+    /* width: 100px; */
+    padding-bottom: 10px;
+}
+
+.skill-card p{
+    margin-bottom: 0px;
+}
+
+/* Hover animations for skill cards */
+.skill-card:hover{
+    transform: scale(1.05);
+    transition: all 0.1s ease-in-out;
+}
+
+/* adjust for mobile devices */
+@media screen and (max-width: 768px){
+    .skills-container{
+        /* margin: 1rem; */
+        /* margin-top: 1rem; */
+        /* padding: 0.5rem; */
+    }
+    .skill-card img{
+        height: 40px;
+    }
+    .skill-card{
+        padding: 0.5rem;
+        border-radius: 4px;
+    }
+    .skill h2{
+        font-size: 1.2rem;  
+    }
+    .skill-card p{
+        font-size: 0.5rem;
+        padding: 0;
+    }
+    .skill-cards{
+        margin: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    }
+    .skills-head{
+        font-size: 2.5rem;
+    }
+    .skill-card{
+        padding: 0.5rem;
+    }
+    .skill-card img{
+        height: 30px;
+    }
+}

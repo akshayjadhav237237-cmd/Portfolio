@@ -1,0 +1,118 @@
+
+.about-text-container{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* background-color: var(--text-light-gray); */
+    /* background-color: white; */
+    
+}
+
+.about-container{
+  width: 100%;
+  padding: 0 2rem 2rem;
+}
+
+.about-head{
+    margin: 1rem auto;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    /* color: gray; */
+    -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+  -webkit-background-clip: text;
+}
+
+/* styles for h1 */
+.about-head{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* styles for p */
+.about-container p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: 60vw;
+    margin: 1rem;
+    color: var(--text-light-gray);
+    /* color: var(--background-dark); */
+  }
+
+.about-text{
+  /* make it as a glassy card */
+  background-color: #161d28;
+  padding: 1rem;
+  border-radius: 10px;
+  /* border: 0.2px solid var(--text-light-gray); */
+
+}
+
+.about-img img{
+  height: 350px;
+  width: 350px;
+
+  /* clip into a cirlce frame */
+  border-radius: 50%;
+}
+
+.resume-btn{
+  background-color: #23364a;
+  color: #AE67FA;
+  width: 7rem;
+  padding: 8px 20px;
+  border-radius: 5px;
+  /* border: 0.2px solid var(--text-light-gray); */
+  margin: 1rem;
+  
+}
+
+.resume-btn a{
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #AE67FA;
+}
+
+.resume-btn:hover{
+  transform: scale(1.03);
+  transition: all 0.1s ease-in-out;
+}
+
+/* adjust for mobile devices */
+@media screen and (max-width: 768px){
+  .about-container{
+    /* width: 100%; */
+    /* padding: 0.5rem; */
+    /* margin: 1rem; */
+  }
+  .about-container h1{
+    font-size: 2.5rem;
+  }
+  .about-text-container{
+    flex-direction: column-reverse;
+  }
+  .about-img img{
+    height: 130px;
+    width: 130px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    /* display: inline; */
+  }
+  
+  .about-container p{
+    max-width: 100%;
+    font-size: 0.7rem;
+    margin: 0.5rem;
+  }
+
+  .resume-btn{
+    scale: 0.9;
+    margin-left: 0;
+  }
+
+}

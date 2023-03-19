@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* default css */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Lobster:300,400,500,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* import poppins font */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800,900&display=swap');
+
+:root {
+  --background-dark: #0d1117;
+  --text-light-gray: #a3b3bc;
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  background-color: var(--background-dark);
+
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8%;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-dark);
+}
+
+
+.text-gradient{
+  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%); */
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+}
+
+
+.gradient__bg1 {
+  /* background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%); */
+  /* global 92%+ browsers support */
+  background:
+  radial-gradient(circle at 3% 20%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%),
+  radial-gradient(circle at 3% 20%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+}
+
+
+.gradient__bg2 {
+  /* add radial gradient in bottom right corner */
+  background:-moz-radial-gradient(circle at 97% 75%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 97% 75%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+}
+
+/* underline animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  border-radius: 15px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #151b24;  
+  color: var(--text-light-gray);
+
+}
+::-webkit-scrollbar-thumb{
+  background-color: #8b9aa3;
+  border-radius: 10px;
+  border: 0.2px solid #2f3435;
+  color: var(--text-light-gray);
+}
+
+/* adjust h1 for mobiles */
+@media screen and (max-width: 768px){
+  h1{
+    font-size: 2.5rem;
+  }
 }
