@@ -31,6 +31,8 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  
+
 }
 
 .navbar {
@@ -52,6 +54,8 @@ body {
 }
 
 .nav-elements {
+
+  z-index: 2;
 }
 
 .nav-elements ul {
@@ -110,16 +114,26 @@ body {
   .nav-elements {
     position: absolute;
     right: 0;
-    top: 60px;
-    background-color: var(--background-dark);
+    top: 70px;
+    
+    /* background-color: var(--background-dark); */
+
+    /* From https://css.glass */
+    /* background: rgba(255, 255, 255, 0.07); */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.7px);
+    -webkit-backdrop-filter: blur(8.7px);
+    border: 1px solid rgba(109, 109, 109, 0.3);
     width: 0px;
-    height: calc(100vh - 60px);
-    transition: all 0.3s ease-in;
+    height: calc(40vh - 10px);
+    transition: all 0.4s ease-in;
     overflow: hidden;
   }
 
   .nav-elements.active {
-    width: 270px;
+    /* width: 270px; */
+    width: 100vw;
   }
 
   .nav-elements ul {
@@ -129,6 +143,6 @@ body {
 
   .nav-elements ul li {
     margin-right: unset;
-    margin-top: 22px;
+    margin-top: 45px;
   }
 }
