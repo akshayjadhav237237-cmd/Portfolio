@@ -10,7 +10,9 @@ const About = () => {
           </p>
           <p>I have a deep interest in programming 👨🏻‍💻 and full stack web development. </p>
           <p>As a developer, I am passionate about learning new things and continuously improving my skills. I enjoy collaborating with others and am always eager to take on new challenges. Whether it's building a new feature, debugging complex issues, or optimizing code, I am always ready to tackle the task at hand⚡</p>
-          <div className='resume-btn'><a href='https://drive.google.com/file/d/1ZVB19GwAwSj7UQ9my98PNTIrimUhc7g5/view?usp=sharing' target="_blank" className='text-gradient' rel="noreferrer">Resume</a></div>
+          <div className='resume-btn'>
+            <a href='https://drive.google.com/file/d/1ZVB19GwAwSj7UQ9my98PNTIrimUhc7g5/view?usp=sharing' target="_blank" className='text-gradient' rel="noreferrer">Resume</a>
+          </div>
         </div>
 
         <div className='about-img'>
