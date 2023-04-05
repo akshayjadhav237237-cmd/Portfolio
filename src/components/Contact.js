@@ -8,7 +8,7 @@ const Contact = () => {
         <div className='contact-card'>
             <img src={require("../img/email.png")} alt="mail" className='contact-icon'/>
             <div className='mail-btn'>
-              <a class='text-gradient' href='mailto:jadhavaditya517@gmail.com'>Mail Me</a>
+              <a className='text-gradient' href='mailto:jadhavaditya517@gmail.com'>Mail Me</a>
             </div>
         </div>
        

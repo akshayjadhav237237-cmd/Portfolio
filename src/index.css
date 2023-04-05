@@ -38,13 +38,17 @@ body {
 
 
 .gradient__bg1 {
-  /* background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%); */
-  /* global 92%+ browsers support */
   background:
   radial-gradient(circle at 3% 20%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%),
   radial-gradient(circle at 3% 20%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
-}
 
+  /* multiple radial gradients */
+  background:
+  -moz-radial-gradient(circle at 3% 20%, rgb(254, 254, 255) 0%, rgba(4, 12, 24, 1) 25%),
+  -moz-radial-gradient(circle at 3% 20%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  /* global 92%+ browsers support */
+  
+}
 
 .gradient__bg2 {
   /* add radial gradient in bottom right corner */
