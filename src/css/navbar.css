@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900;800;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Lobster:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Rubik:wght@700;800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:300,400,500,700,800,900&display=swap');
 
@@ -41,11 +41,9 @@ body {
   position: relative;
 }
 
-.logo {
-  font-family: 'Lobster Two', cursive;
-  /* font-family: 'Poppins', cursive; */
-  font-weight: 700;
-  font-style: bold;
+.logo h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
 }
 
 .menu-icon {
@@ -100,7 +98,7 @@ body {
 @media (max-width: 600px) {
 
   .logo h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .menu-icon {

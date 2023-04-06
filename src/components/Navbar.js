@@ -33,7 +33,7 @@ const Navbar = () => {
     <nav className="navbar" ref={navbarRef}>
       <div className="container">
         <div className="logo">
-          <h1 className='text-gradient'>Aditya</h1>
+          <h1 className='text-gradient'>AJ.</h1>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <Hamburger color='#a3b3bc' />
