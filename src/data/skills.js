@@ -37,7 +37,7 @@ const skills = [
     },
     {
         id: 7,
-        name: 'JavaScritp',
+        name: 'JavaScript',
         category: 'web',
         image: 'img/icons/js.png',
     },
