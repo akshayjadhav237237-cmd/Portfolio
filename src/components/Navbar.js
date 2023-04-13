@@ -1,20 +1,23 @@
-import '../css/navbar.css';
-import { useState, useEffect, useRef } from 'react'
-import { Turn as Hamburger } from 'hamburger-react'
+import '../css/navbar.css'; 
+import { useState, useEffect, useRef } from 'react'; 
+import { Turn as Hamburger } from 'hamburger-react'; 
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false)
+  const [showNavbar, setShowNavbar] = useState(false); // State to manage navbar visibility
+  const [isHamburgerActive, setIsHamburgerActive] = useState(false); // State to manage hamburger icon
 
   const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar)
+    setShowNavbar(!showNavbar); // Toggle navbar visibility
+    setIsHamburgerActive(!isHamburgerActive); // Toggle hamburger icon
   }
 
-  const navbarRef = useRef(null)
+  const navbarRef = useRef(null); // Ref for navbar DOM element
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-        setShowNavbar(false);
+        setShowNavbar(false); // Close navbar
+        setIsHamburgerActive(false); // Reset hamburger icon
       }
     };
 
@@ -26,7 +29,8 @@ const Navbar = () => {
   }, [navbarRef]);
 
   const handleLinkClick = () => {
-    setShowNavbar(false);
+    setShowNavbar(false); // Close navbar
+    setIsHamburgerActive(false); // Reset hamburger icon
   }
 
   return (
@@ -36,7 +40,7 @@ const Navbar = () => {
           <h1 className='text-gradient'>AJ.</h1>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
-          <Hamburger color='#a3b3bc' />
+          <Hamburger color='#a3b3bc' toggled={isHamburgerActive} /> {/* Update hamburger icon with toggled prop */}
         </div>
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
           <ul>
@@ -62,4 +66,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
