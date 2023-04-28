@@ -44,9 +44,6 @@ const Navbar = () => {
         </div>
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
           <ul>
-            {/* <li>
-              <a className='hover-underline-animation' href="#">Home</a>
-            </li> */}
             <li>
               <a className='hover-underline-animation' href="#about" onClick={handleLinkClick}>About</a>
             </li>
@@ -59,6 +56,11 @@ const Navbar = () => {
             <li>
               <a className='hover-underline-animation' href="#contact" onClick={handleLinkClick}>Contact</a>
             </li>
+            {/* <li>
+              <div className='resume-btn'>
+              <a href='https://drive.google.com/file/d/1ZVB19GwAwSj7UQ9my98PNTIrimUhc7g5/view?usp=sharing' target="_blank" className='text-gradient' rel="noreferrer">Resume</a>
+          </div>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import { Analytics } from '@vercel/analytics/react';
 import Contact from "./components/Contact"
 import { useState } from "react";
 
@@ -24,6 +25,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Analytics />
     </div>
     </>
   );
