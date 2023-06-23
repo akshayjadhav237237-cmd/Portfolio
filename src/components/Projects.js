@@ -7,6 +7,21 @@ const Projects = () => {
             <h1 className='projects-head text-gradient hover-underline-animation'>Projects</h1>
             <div className='project-cards'>
                 <div className='project-card'>
+                    <img src={require('../img/projects/chat.png')} alt='chat-app'></img>
+                    <h2>Chatter</h2>
+                    <div className='tags'>
+                        <span>React</span>
+                        <span>MongoDB</span>
+                        <span>WebSocket</span>
+                    </div>
+                    <p>A messaging web app that enables you to chat and share files in real time.</p>
+                    <div className='project-links'>
+                        <a className='disabled-link' target='_blank' rel="noreferrer">Website</a>
+                        <a href='https://github.com/adityajadhav02/chat-app' target='_blank' rel="noreferrer">GitHub</a>
+                    </div>
+                </div>
+
+                <div className='project-card'>
                     <img src={require('../img/projects/noteapp.png')} alt='notes-app'></img>
                     <h2>Notes App</h2>
                     <div className='tags'>
@@ -16,7 +31,7 @@ const Projects = () => {
                     <p>A responsive web application that you can use to take notes on the go.</p>
                     <div className='project-links'>
                         <a href='https://notes-keeper517.netlify.app/' target='_blank' rel="noreferrer">Website</a>
-                        <a href='https://github.com/adityajadhav02/keeper-app' target='_blank' rel="noreferrer">Github</a>
+                        <a href='https://github.com/adityajadhav02/keeper-app' target='_blank' rel="noreferrer">GitHub</a>
                     </div>
                 </div>
                 <div className='project-card'>
@@ -29,10 +44,10 @@ const Projects = () => {
                     <p>A web app that provides you the lateset trends and news from the crypto world.</p>
                     <div className='project-links'>
                         <a href='https://cryptoverse22.netlify.app/' target='_blank' rel="noreferrer">Website</a>
-                        <a href='https://github.com/adityajadhav02/cryptoverse' target='_blank' rel="noreferrer">Github</a>
+                        <a href='https://github.com/adityajadhav02/cryptoverse' target='_blank' rel="noreferrer">GitHub</a>
                     </div>
                 </div>
-                
+
                 <div className='project-card'>
                     <img src={require('../img/projects/todolist.png')} alt='notes-app'></img>
                     <h2>Todo List</h2>
@@ -44,7 +59,7 @@ const Projects = () => {
                     <p>A todo-list that helps you track your tasks and save them on the database.</p>
                     <div className='project-links'>
                         <a href='https://todo-list-517.herokuapp.com/' target='_blank' rel="noreferrer">Website</a>
-                        <a href='https://github.com/adityajadhav02/todolist-node-ejs' target='_blank' rel="noreferrer">Github</a>
+                        <a href='https://github.com/adityajadhav02/todolist-node-ejs' target='_blank' rel="noreferrer">GitHub</a>
                     </div>
                 </div>
                 <div className='project-card'>
@@ -58,7 +73,7 @@ const Projects = () => {
                     <p>A simple website that fetches and displays movies. You can also search for movies. </p>
                     <div className='project-links'>
                         <a href='https://moviedisplay.netlify.app/' target='_blank' rel="noreferrer">Website</a>
-                        <a href='https://github.com/adityajadhav02/movie-app' target='_blank' rel="noreferrer">Github</a>
+                        <a href='https://github.com/adityajadhav02/movie-app' target='_blank' rel="noreferrer">GitHub</a>
                     </div>
                 </div>
             </div>

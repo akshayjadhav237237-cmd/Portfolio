@@ -56,6 +56,12 @@
     text-decoration: none;
 }
 
+/* add styles for disabled links */
+.project-links a.disabled-link{
+    color: #464a4f;
+    cursor: not-allowed;
+}
+
 .tags{
     display: flex;
     flex-wrap: wrap;
@@ -69,8 +75,9 @@
     font-size: 0.8rem;
     border-radius: 5px;
     color: #3b88d4;
-    background-color: #333940;
-    padding: 0.1rem 0.3rem;
+    border: 0.5px solid #3b424a;
+    background-color: #2f353b;
+    padding: 2px 8px;
 }
 
 /* add mobile styles */
