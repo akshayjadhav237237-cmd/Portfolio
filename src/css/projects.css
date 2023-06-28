@@ -24,12 +24,11 @@
     background-color: #161d28;
     padding: 1rem;
     border-radius: 10px;
-    /* border: 0.2px solid #2f3435; */
+    border: 1px solid #21272a;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .project-card:hover{
@@ -76,6 +75,7 @@
     border-radius: 5px;
     color: #3b88d4;
     border: 0.5px solid #3b424a;
+    /* border-bottom: 1.5px solid #3b88d4; */
     background-color: #2f353b;
     padding: 2px 8px;
 }

@@ -8,7 +8,7 @@ const Projects = () => {
             <div className='project-cards'>
                 <div className='project-card'>
                     <img src={require('../img/projects/chat.png')} alt='chat-app'></img>
-                    <h2>Chatter</h2>
+                    <h2>ChatSpot</h2>
                     <div className='tags'>
                         <span>React</span>
                         <span>MongoDB</span>
