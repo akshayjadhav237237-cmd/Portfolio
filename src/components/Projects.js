@@ -7,6 +7,20 @@ const Projects = () => {
             <h1 className='projects-head text-gradient hover-underline-animation'>Projects</h1>
             <div className='project-cards'>
                 <div className='project-card'>
+                    <img src={require('../img/projects/homestay.png')} alt='homestay'></img>
+                    <h2>HomeStay</h2>
+                    <div className='tags'>
+                        <span>NextJs</span>
+                        <span>MongoDB</span>
+                        <span>Prisma</span>
+                    </div>
+                    <p>A property listing and booking platform.</p>
+                    <div className='project-links'>
+                        <a href='https://homestay02.vercel.app' target='_blank' rel="noreferrer">Website</a>
+                        <a href='https://github.com/adityajadhav02/homestay' target='_blank' rel="noreferrer">GitHub</a>
+                    </div>
+                </div>
+                <div className='project-card'>
                     <img src={require('../img/projects/chat.png')} alt='chat-app'></img>
                     <h2>ChatSpot</h2>
                     <div className='tags'>
