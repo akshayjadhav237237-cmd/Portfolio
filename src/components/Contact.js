@@ -3,7 +3,7 @@ import '../css/contact.css'
 const Contact = () => {
   return (
     <div className='contact-container' id="contact">
-        <h1 className='contact-head text-gradient hover-underline-animation'>Contact Me</h1>
+        <h1 className='contact-head text-gradient'>Contact Me</h1>
         
         <div className='contact-card'>
             <img src={require("../img/email.png")} alt="mail" className='contact-icon'/>

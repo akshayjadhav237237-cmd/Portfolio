@@ -7,7 +7,7 @@ const Skills = () => {
     return (
         
         <div className='skills-container' id="skills">
-            <h1 className='skills-head text-gradient hover-underline-animation'>Skills</h1>
+            <h1 className='skills-head text-gradient'>Skills</h1>
             <div className='skills'>
                 <div className='skill'>
                     <h2>Programming</h2>
@@ -25,7 +25,6 @@ const Skills = () => {
                         }
 
                         </div>
-                    {/* </Fade> */}
                 </div>
                 <div className='skill'>
                     <h2>Web Technologies</h2>
@@ -34,6 +33,22 @@ const Skills = () => {
                     {
                             skills.filter(skill =>
                                 skill.category === 'web'
+                            ).map(fSkill => (
+                                <div key={fSkill.id} className='skill-card'>
+                                    <img src={require(`../${fSkill.image}`)} alt={fSkill.name}></img>
+                                    <p>{fSkill.name}</p>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+                <div className='skill'>
+                    <h2>Database</h2>
+                    {/* make cards */}
+                    <div className='skill-cards'>
+                    {
+                            skills.filter(skill =>
+                                skill.category === 'database'
                             ).map(fSkill => (
                                 <div key={fSkill.id} className='skill-card'>
                                     <img src={require(`../${fSkill.image}`)} alt={fSkill.name}></img>

@@ -4,7 +4,7 @@ import '../css/projects.css'
 const Projects = () => {
     return (
         <div className='projects-container' id="projects">
-            <h1 className='projects-head text-gradient hover-underline-animation'>Projects</h1>
+            <h1 className='projects-head text-gradient'>Projects</h1>
             <div className='project-cards'>
                 <div className='project-card'>
                     <img src={require('../img/projects/homestay.png')} alt='homestay'></img>

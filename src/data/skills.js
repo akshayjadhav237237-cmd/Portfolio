@@ -24,45 +24,45 @@ const skills = [
         image: 'img/icons/algorithms.png',
     },
     {
-        id: 5,
+        id: 10,
         name: 'HTML',
         category: 'web',
         image: 'img/icons/html-5.png',
     },
     {
-        id: 6,
+        id: 11,
         name: 'CSS',
         category: 'web',
         image: 'img/icons/css.png',
     },
     {
-        id: 7,
+        id: 12,
         name: 'JavaScript',
         category: 'web',
         image: 'img/icons/js.png',
     },
     {
-        id: 8,
+        id: 5,
         name: 'React',
         category: 'web',
         image: 'img/icons/react.png',
     },
     {
-        id: 9,
+        id: 6,
         name: 'NodeJs',
         category: 'web',
         image: 'img/icons/nodejs.png',
     },
     {
-        id: 10,
+        id: 7,
         name: 'ExpressJs',
         category: 'web',
         image: 'img/icons/express.png',
     },
     {
-        id: 11,
+        id: 8,
         name: 'MongoDB',
-        category: 'web',
+        category: 'database',
         image: 'img/icons/mongodb.png',
     },
     {
@@ -100,7 +100,32 @@ const skills = [
         name: 'Heroku',
         category: 'tools',
         image: 'img/icons/heroku.png',
-    }
+    },
+    {
+        id: 18,
+        name: 'MySQL',
+        category: 'database',
+        image: 'img/icons/mysql.png',
+    },
+    {
+        id: 9,
+        name: 'NextJs',
+        category: 'web',
+        image: 'img/icons/next.png',
+    },
+    {
+        id: 20,
+        name: 'Prisma',
+        category: 'database',
+        image: 'img/icons/prisma.png',
+    },
+    {
+        id: 21,
+        name: 'Tailwind CSS',
+        category: 'web',
+        image: 'img/icons/tailwind.png',
+    },
+
 ];
 
 export default skills;
