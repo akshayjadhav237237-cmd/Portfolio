@@ -51,6 +51,9 @@ const Navbar = () => {
               <a className='hover-underline-animation' href="#skills" onClick={handleLinkClick}>Skills</a>
             </li>
             <li>
+              <a className='hover-underline-animation' href="#experience" onClick={handleLinkClick}>Experience</a>
+            </li>
+            <li>
               <a className='hover-underline-animation' href="#projects" onClick={handleLinkClick}>Projects</a>
             </li>
             <li>

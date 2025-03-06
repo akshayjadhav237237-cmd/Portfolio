@@ -125,7 +125,12 @@ const skills = [
         category: 'web',
         image: 'img/icons/tailwind.png',
     },
-
+    {
+        id: 22,
+        name: 'SAS',
+        category: 'database',
+        image: 'img/icons/sas.png',
+    }
 ];
 
 export default skills;
