@@ -1,7 +1,10 @@
 import React from 'react'
 import '../css/experience.css'
+import useInView from '../hooks/useInView';
 
 const Experience = () => {
+    const [ref, isInView] = useInView({ threshold: 0.1 });
+    
     const experiences = [
         {
             company: "Effiya Technologies",
@@ -14,11 +17,11 @@ const Experience = () => {
     ];
 
     return (
-        <div className='experience-container' id="experience">
+        <div ref={ref} className='experience-container' id="experience">
             <h1 className='experience-head text-gradient'>Experience</h1>
             <div className='experience-cards'>
                 {experiences.map((exp, index) => (
-                    <div key={index} className='experience-card'>
+                    <div key={index} className={`experience-card ${isInView ? `fade-in delay-${index % 4 + 1}` : ''}`}>
                         <div className='experience-header'>
                             <h2>{exp.position}</h2>
                             <span className='duration'>{exp.duration}</span>

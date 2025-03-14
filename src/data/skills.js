@@ -24,6 +24,12 @@ const skills = [
         image: 'img/icons/algorithms.png',
     },
     {
+        id: 22,
+        name: 'SAS',
+        category: 'Programming',
+        image: 'img/icons/sas.png',
+    },
+    {
         id: 10,
         name: 'HTML',
         category: 'web',
@@ -124,12 +130,6 @@ const skills = [
         name: 'Tailwind CSS',
         category: 'web',
         image: 'img/icons/tailwind.png',
-    },
-    {
-        id: 22,
-        name: 'SAS',
-        category: 'database',
-        image: 'img/icons/sas.png',
     }
 ];
 
