@@ -1,9 +1,9 @@
-
 .about-text-container{
     
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
     
     /* background-color: var(--text-light-gray); */
     /* background-color: white; */
@@ -24,6 +24,8 @@
     -webkit-text-fill-color: transparent;
   background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
   -webkit-background-clip: text;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
 }
 
 /* styles for h1 */
@@ -41,15 +43,23 @@
     margin: 1rem;
     color: var(--text-light-gray);
     /* color: var(--background-dark); */
-  }
+    line-height: 1.6;
+}
 
-.about-text{
-  /* make it as a glassy card */
-  background-color: #161d28;
-  padding: 1rem;
+.about-text {
+  background: rgba(28, 37, 51, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1.5rem;
   border-radius: 10px;
-  /* border: 0.2px solid var(--text-light-gray); */
+  flex: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
 
+.about-text:hover {
+  background: rgba(35, 45, 63, 0.7);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .about-img img{
@@ -58,6 +68,7 @@
 
   /* clip into a cirlce frame */
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .resume-btn{
@@ -68,7 +79,7 @@
   border-radius: 5px;
   /* border: 0.2px solid var(--text-light-gray); */
   margin: 1rem;
-  
+  transition: transform 0.2s ease-in-out;
 }
 
 .resume-btn a{
@@ -80,25 +91,24 @@
 
 .resume-btn:hover{
   transform: scale(1.03);
-  transition: all 0.1s ease-in-out;
 }
 
 /* adjust for mobile devices */
 @media screen and (max-width: 768px){
   .about-container{
-    /* width: 100%; */
-    /* padding: 0.5rem; */
-    /* margin: 1rem; */
+    padding: 0 1rem 1rem;
   }
   .about-container h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
   .about-text-container{
     flex-direction: column-reverse;
+    gap: 1rem;
   }
   .about-img img{
-    height: 130px;
-    width: 130px;
+    height: 200px;
+    width: 200px;
     border-radius: 20px;
     margin-bottom: 1rem;
     /* display: inline; */
@@ -106,13 +116,38 @@
   
   .about-container p{
     max-width: 100%;
-    font-size: 0.7rem;
-    margin: 0.5rem;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+  }
+
+  .about-text {
+    padding: 1rem;
   }
 
   .resume-btn{
-    scale: 0.9;
-    margin-left: 0;
+    width: 6rem;
+    padding: 6px 16px;
+    margin: 0.5rem 0;
   }
 
+  .resume-btn a {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .about-img img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .about-container p {
+    font-size: 0.9rem;
+  }
+
+  .about-head {
+    font-size: 1.8rem;
+  }
 }
